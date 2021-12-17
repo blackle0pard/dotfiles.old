@@ -1,0 +1,18 @@
+[user]
+	name = blackle0pard
+	email = ax3roxrfewsoidukqu8w.github@blackle0pard.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+	interactive = auto
+[core]
+	editor = vim
+	quotepath = false
+[credential]
+	helper = cache --timeout=3600
+[merge]
+	tool = vimdiff
+[init]
+	defaultBranch = main
