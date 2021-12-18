@@ -8,7 +8,7 @@
 	ui = true
 	interactive = auto
 [core]
-	editor = vim
+	editor = code
 	quotepath = false
 [credential]
 	helper = cache --timeout=3600
