@@ -9,7 +9,7 @@ export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/sqlite/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/sqlite/lib/pkgconfig"
 
-PROMPT="%D{%Y-%m-%d} %D{%K:%M:%S} %~ %# "
+PROMPT="%D{%Y-%m-%d} %D{%H:%M:%S} %~ %# "
 
 setopt histignorealldups
 setopt share_history
@@ -30,6 +30,7 @@ alias lha='ls -laTh'
 alias lh='ls -lhT'
 alias sz='source ~/.zshrc'
 alias c='clear'
+alias hi='history -i'
 
 HB_BIN_PATH=/opt/homebrew/bin
 PYTHON_PATH="$HB_BIN_PATH/python3"
