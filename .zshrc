@@ -31,6 +31,8 @@ alias lh='ls -lhT'
 alias sz='source ~/.zshrc'
 alias c='clear'
 alias hi='history -i'
+alias bu='brew upgrade'
+alias bc='brew cleanup'
 
 HB_BIN_PATH=/opt/homebrew/bin
 PYTHON_PATH="$HB_BIN_PATH/python3"
