@@ -1,10 +1,7 @@
 autoload -Uz colors
 colors
 
-autoload -Uz compinit
-compinit
-
-export PATH="/opt/homebrew/opt/sqlite/bin:/opt/homebrew/opt/tcl-tk/bin:/opt/homebrew/opt/libxml2/bin:$PATH"
+export PATH="/opt/homebrew/opt/sqlite/bin:/opt/homebrew/opt/tcl-tk/bin:/opt/homebrew/opt/libxml2/bin:/opt/homebrew/bin/:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/sqlite/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/sqlite/lib/pkgconfig"
@@ -42,4 +39,8 @@ alias python='$PYTHON_PATH'
 alias pip='$PIP_PATH'
 
 EDITOR=/usr/bin/vim
+
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+complete -C '/opt/homebrew/bin/aws_completer' aws
 
